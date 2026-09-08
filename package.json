@@ -1,0 +1,14 @@
+{
+  "name": "placement-helper-ai",
+  "version": "1.0.0",
+  "description": "Placement Helper AI - Full-stack AI Placement Helper Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
